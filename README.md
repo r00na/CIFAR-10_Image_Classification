@@ -23,25 +23,25 @@ This project demonstrates how to classify images from the [CIFAR-10 dataset](htt
 
 ### 🔧 Project Structure
 
-1. ** Dataset Handling**
+1.  Dataset Handling
 
    * Uses Kaggle API to download CIFAR-10 dataset
    * Extracts .zip and .7z files
    * Reads labels from trainLabels.csv
 
-2. ** Data Preprocessing**
+2.  Data Preprocessing
 
    * Reads images and converts to NumPy arrays
    * Maps string labels to integers
    * Scales pixel values to \[0, 1]
    * Splits data into training & testing sets
 
-3. ** Model 1: Basic Neural Network**
+3.  Model 1: Basic Neural Network
 
    * Flatten → Dense(64, ReLU) → Dense(10, Softmax)
    * Trained for 10 epochs with adam optimizer
 
-4. ** Model 2: Transfer Learning with ResNet50**
+4.  Model 2: Transfer Learning with ResNet50
 
    * Uses ResNet50 (pre-trained on ImageNet)
    * Resizes CIFAR-10 images to (256, 256)
